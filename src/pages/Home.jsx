@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 /*
  * Author : Stu (https://www.eulbyvan.com)
@@ -46,9 +47,12 @@ const Home = () => {
 									<button className="btn btn-primary mx-2">
 										View
 									</button>
-									<button className="btn btn-outline-primary mx-2">
+									<Link
+										className="btn btn-outline-primary mx-2"
+										to={`/user/edit/${user.id}`}
+									>
 										Edit
-									</button>
+									</Link>
 									<button className="btn btn-danger mx-2">
 										Delete
 									</button>

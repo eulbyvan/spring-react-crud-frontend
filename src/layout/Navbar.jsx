@@ -26,7 +26,7 @@ const Navbar = () => {
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
-					<Link className="btn btn-outline-light" to="/adduser">
+					<Link className="btn btn-outline-light" to="/user/add">
 						Add User
 					</Link>
 				</div>
