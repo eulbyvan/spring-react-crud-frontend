@@ -35,6 +35,7 @@ const AddUser = () => {
 			<div className="row">
 				<div className="col-md-6 offset-md-3 border roudned p-4 mt-2 shadow">
 					<h2 className="text-center m-4">Register User</h2>
+
 					<form onSubmit={(e) => onSubmit(e)}>
 						<div className="form-floating mb-3">
 							<input

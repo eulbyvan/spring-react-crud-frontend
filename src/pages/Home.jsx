@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 /*
  * Author : Stu (https://www.eulbyvan.com)
@@ -11,7 +11,7 @@ import { Link, useParams } from 'react-router-dom';
 const Home = () => {
 	const [users, setUsers] = useState([]);
 
-	const { id } = useParams();
+	// const { id } = useParams();
 
 	useEffect(() => {
 		loadUsers();
@@ -51,12 +51,15 @@ const Home = () => {
 								<td>{user.username}</td>
 								<td>{user.email}</td>
 								<td>
-									<button className="btn btn-primary mx-2">
+									<Link
+										className="btn btn-primary mx-2"
+										to={`/users/${user.id}`}
+									>
 										View
-									</button>
+									</Link>
 									<Link
 										className="btn btn-outline-primary mx-2"
-										to={`/user/edit/${user.id}`}
+										to={`/users/edit/${user.id}`}
 									>
 										Edit
 									</Link>

@@ -13,7 +13,7 @@ const Navbar = () => {
 			<nav className="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-primary">
 				<div className="container-fluid">
 					<Link className="navbar-brand" to="/">
-						Spring and React CRUD Application
+						Spring Boot and React CRUD Application
 					</Link>
 					<button
 						className="navbar-toggler"
@@ -26,7 +26,7 @@ const Navbar = () => {
 					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
-					<Link className="btn btn-outline-light" to="/user/add">
+					<Link className="btn btn-outline-light" to="/users/add">
 						Add User
 					</Link>
 				</div>
