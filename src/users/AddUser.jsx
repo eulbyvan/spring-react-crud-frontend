@@ -7,9 +7,7 @@ import React from 'react';
  */
 
 const AddUser = () => {
-    return (
-        <div>AddUser</div>
-    );
+    return <div>AddUser Form</div>;
 };
 
 export default AddUser;
